@@ -1,4 +1,4 @@
-# ASTRAM Command IQ — AI Traffic Intelligence Platform
+# ASTRAM Command IQ - AI Traffic Intelligence Platform
 
 > **Flipkart GRID Hackathon Submission**  
 > Event-Driven Congestion: Planned & Unplanned  
@@ -8,7 +8,7 @@
 
 ## What This Is
 
-A production-grade AI Traffic Command Center with 10 interactive screens:
+A production grade AI Traffic Command Center with 10 interactive screens:
 
 | Screen | Description |
 |--------|-------------|
@@ -36,7 +36,7 @@ No backend, no database, no API keys required. The prototype runs entirely in th
 
 ---
 
-## Quick Start — 3 commands
+## Quick Start with 3 commands
 
 ```bash
 # 1. Install dependencies
@@ -53,7 +53,7 @@ npm run dev
 
 ## Full Setup Instructions
 
-### Step 1 — Clone or extract the project
+### Step 1 : Clone or extract the project
 
 ```bash
 # If cloning from a git repository:
@@ -65,7 +65,7 @@ unzip astram-command-iq.zip
 cd astram-command-iq
 ```
 
-### Step 2 — Install Node.js (if not installed)
+### Step 2 : Install Node.js (if not installed)
 
 **macOS (using Homebrew):**
 ```bash
@@ -89,7 +89,7 @@ node -v   # Should show v18.x.x or higher
 npm -v    # Should show 9.x.x or higher
 ```
 
-### Step 3 — Install project dependencies
+### Step 3 : Install project dependencies
 
 ```bash
 cd astram-command-iq
@@ -106,7 +106,7 @@ This installs all packages listed in `package.json`:
 Expected output: `added N packages in Xs`  
 No warnings about missing peer dependencies are blocking.
 
-### Step 4 — Start the development server
+### Step 4 : Start the development server
 
 ```bash
 npm run dev
