@@ -184,17 +184,17 @@ Click any tab in the top navigation bar to switch screens.
 ### Key interactions to demonstrate:
 
 **Command Center (Screen 1)**
-- Click any red/orange circle on the city map — it switches to AI Copilot with a pre-filled context query about that corridor
+- Click any red/orange circle on the city map, it switches to AI Copilot with a pre-filled context query about that corridor
 - Hover over heatmap cells to see exact event counts per hour
 
 **Event Intelligence (Screen 2)**
-- Change the "Event type" dropdown — all forecast metrics update live (congestion score, delay, closure probability, Explainable AI reasoning text)
+- Change the "Event type" dropdown, all forecast metrics update live (congestion score, delay, closure probability, Explainable AI reasoning text)
 
 **Resource Planner (Screen 3)**
-- Click any officer zone tile — switches to Copilot with an explanation request for that zone's allocation
+- Click any officer zone tile switches to Copilot with an explanation request for that zone's allocation
 
 **Digital Twin (Screen 5)**
-- Change the scenario dropdown (IPL / Accident / VIP / Water Logging) — Canvas animation updates with particle density and heatmap, KPIs recalculate
+- Change the scenario dropdown (IPL / Accident / VIP / Water Logging) Canvas animation updates with particle density and heatmap, KPIs recalculate
 
 **AI Copilot (Screen 6)**
 - Type any free-text query or click the quick-prompt buttons
@@ -208,7 +208,7 @@ Click any tab in the top navigation bar to switch screens.
 **AI War Room (Screen 7)**
 - Select event type, enter attendance, pick corridor and time → click "Generate Plan"
 - Produces: congestion forecast, officer count, barricade count, 6-step command timeline, cost savings breakdown, Explainable AI panel
-- Attendance field is interactive — try 10,000 vs 80,000 to see values scale
+- Attendance field is interactive, try 10,000 vs 80,000 to see values scale
 
 **Alert Feed (Screen 9)**
 - Use the All / Critical / Forecast filter buttons
@@ -241,9 +241,9 @@ All numbers in this prototype are derived from the real ASTRAM Bengaluru traffic
 
 The prototype's Model Accuracy screen (Screen 8) documents:
 - **Priority classification**: F1=0.999 — genuinely high because event cause strongly determines priority
-- **Road closure prediction**: AUC=0.743, F1=0.247 — class imbalance at 7.4% positive rate; SMOTE fix queued
-- **Event cause (16-class)**: Accuracy=59.8%, F1_weighted=0.507 — baseline is 59.9% (always predict breakdown)
-- **Leakage caught**: First congestion model scored F1=1.00 because target was derived from input features — disclosed and rebuilt
+- **Road closure prediction**: AUC=0.743, F1=0.247, class imbalance at 7.4% positive rate; SMOTE fix queued
+- **Event cause (16-class)**: Accuracy=59.8%, F1_weighted=0.507, baseline is 59.9% (always predict breakdown)
+- **Leakage caught**: First congestion model scored F1=1.00 because target was derived from input features, disclosed and rebuilt
 
 ---
 
@@ -301,20 +301,20 @@ Requires a browser with Canvas 2D support. Works in Chrome 90+, Firefox 88+, Saf
 
 **Problem statement:** Event-Driven Congestion (Planned & Unplanned)
 
-**Dataset:** ASTRAM Bengaluru traffic events — 8,173 records, 46 columns, Nov 2023–Apr 2024
+**Dataset:** ASTRAM Bengaluru traffic events has 8,173 records, 46 columns, Nov 2023–Apr 2024
 
 **Key differentiators vs other teams:**
 1. Traffic Digital Twin with animated vehicle simulation
 2. Honest ML accuracy disclosure (leakage caught and documented)
-3. Pot hole SLA crisis detection (217h vs 72h — systemic failure surfaced from data)
+3. Pot hole SLA crisis detection (217h vs 72h systemic failure surfaced from data)
 4. AI War Room: one-click full deployment plan with timeline and cost savings
 5. Integer Programming resource optimizer (31% saving vs manual)
 6. Post-event self-learning loop with MLflow weekly retrain
-7. Bimodal peak detection (21:00 night + 05:00 morning — two separate models)
+7. Bimodal peak detection (21:00 night + 05:00 morning two separate models)
 8. SHAP explainability on every AI recommendation
 9. SLA breach auto-escalation in alert feed
-10. All data grounded in real ASTRAM records — nothing invented
+10. All data grounded in real ASTRAM records nothing invented
 
 ---
 
-*Built for Flipkart GRID Hackathon — AI Traffic Command Center for Bengaluru*
+*Built for Flipkart GRID Hackathon - AI Traffic Command Center for Bengaluru*
